@@ -110,6 +110,14 @@ main
  }
 */
 
+#registro
+{
+	padding-top:30px;
+	margin-left: 10px;
+	padding-left: 0px; 
+
+}
+
 
 /*INICIO DE RESPONSIVE MEDIANO*/
 @media (max-width: 950px )

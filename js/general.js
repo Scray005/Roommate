@@ -2,6 +2,7 @@ $( document ).ready(function(){
 	
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
+    $(".button-collapse").sideNav();
 
 });
 
@@ -13,7 +14,7 @@ $(()=>{
 	$('.modal').modal();
 
 	
-	firebase.initializeApp(varConfig);
+	firebase.initializeApp(config);
 	
 
 
