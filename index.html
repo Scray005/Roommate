@@ -7,42 +7,209 @@
       <link type="text/css" rel="stylesheet" href="C:/Users/dayana/Documents/GitHub/Roommate/materialize/css/materialize.min.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="js/general.js">
     </head>
 
     <body>
-  		<header id="header">
-  			<!--Se agregaro el marco superior-->
-  			<div class="row ">
-		      <div class="col s3"><img src="http://st.depositphotos.com/1518767/2805/i/450/depositphotos_28056555-stock-photo-housemates-choosing-colour-for-wall.jpg" width="100%"></div>
-		      <div class="col s3"><img src="http://st.depositphotos.com/1192060/1684/i/450/depositphotos_16844253-stock-photo-couple-sitting-on-the-couch.jpg" width="100%"></div>
-		      <div class="col s3"><img src="http://st.depositphotos.com/2117297/4471/i/450/depositphotos_44710637-stock-photo-smiling-man-using-laptop.jpg" width="100%"></div>
-		      <div class="col s3"><img src="http://st2.depositphotos.com/1075946/5808/i/450/depositphotos_58085015-stock-photo-woman-sitting-in-shared-apartment.jpg" width="100%"></div>
-    		</div>
-    		<div class="divider"></div> <!--Se añadio un divisor entre el marco superior y los marcos laterales con el login--> 
-    		<!--Se agregaron los marcos laterales y el login-->
-  			<div class="row">
-		      <div class="col s4">
-		      	<img src="http://static9.depositphotos.com/1192060/1096/i/450/depositphotos_10964947-stock-photo-young-couple-on-a-sofa.jpg" width="50%">
-		      	<img src="http://st2.depositphotos.com/6550630/10341/i/450/depositphotos_103414622-stock-photo-girls-lying-and-smiling-together.jpg" width="50%">
-		      </div> 
-		      <div class="col s4">
-		      	............................................................
-		      </div> 
-		      <div class="col s4 offset-s4">
-		      	<span class="flow-text">
-		      		<img src="http://st.depositphotos.com/1192060/1426/i/450/depositphotos_14268883-stock-photo-couple-relaxing-on-the-couch.jpg" width="50%">
-		      		<img src="http://static8.depositphotos.com/1192060/1049/i/450/depositphotos_10498138-stock-photo-portrait-of-young-women-sharing.jpg" width="50%">
-		      	</span>
-		      </div>  
-    		</div>   
+  		<header id="header"><!-- header --> 
+        <nav id="menu"> <!-- Inicio de menu --> 
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Roommate</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="index.html#footer">Contactenos</a></li>
+              <li><a href="#modal1">Iniciar sesion</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index.html#footer">Contactenos</a></li>
+              <li><a href="#modal1">Iniciar sesion</a></li>
+            </ul>
+            <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+          </div>
+        </nav> <!-- Fin de menu --> 
+  		</header><!-- /header --> 
+      
+      <div class="parallax-container">
+        <div class="parallax"><img src="http://blogs.lasprovincias.es/elsindromededarrin/files/2016/01/o-JENNIFER-ANISTON-FRIENDS-facebook-1.jpg"></div>
+      </div>
+      <!--Inicio de cart de informacion con su respectiva imagen --> 
+      <div class="row" id="informacion-row">
+        <div class="col s4">    <!--Informacion de la primera cart --> 
+          <div class="row" >
+            <div class="col s12 m7">
+              <div class="card small" id="carta-uno">
+                <div class="card-image" >
+                  <img src="https://cdn.pixabay.com/photo/2015/12/09/22/26/people-1085695_960_720.png" >
+                </div>
+                <div class="card-content">
+                  <p>¿Necesitas piso o buscas compañer@s para compartir?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+        <div class="col s4">  <!--Informacion de la segunda cart --> 
+          <div class="row" >
+            <div class="col s12 m7">
+              <div class="card small" id="carta-dos">
+                <div class="card-image">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkCF_wgI5tCnplsBhDh23wy7psxUHLwiF2sVfxyPAswOcLfI8hQ" >
+                </div>
+                <div class="card-content">
+                  <p>Registrate por medio de tus redes sociales</p>
+                </div>   
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s4">  <!--Informacion de la tercera cart --> 
+          <div class="row" >
+            <div class="col s12 m7">
+              <div class="card small" id="carta-tres">
+                <div class="card-image">
+                  <img src="http://images.gofreedownload.net/search-male-user-30278.jpg" >
+                </div>
+                <div class="card-content">
+                  <p>Búsquedas acertadas y a tu medida</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  <!--Fin de cart de informacion con su respectiva imagen --> 
+
+      <!--Inicio de marco inferior-->
+      <div class="row ">
+        <div class="col s3"><img src="http://st.depositphotos.com/1518767/2805/i/450/depositphotos_28056555-stock-photo-housemates-choosing-colour-for-wall.jpg" width="100%"></div>
+        <div class="col s3"><img src="http://st.depositphotos.com/1192060/1684/i/450/depositphotos_16844253-stock-photo-couple-sitting-on-the-couch.jpg" width="100%"></div>
+        <div class="col s3"><img src="http://st.depositphotos.com/2117297/4471/i/450/depositphotos_44710637-stock-photo-smiling-man-using-laptop.jpg" width="100%"></div>
+        <div class="col s3"><img src="http://st2.depositphotos.com/1075946/5808/i/450/depositphotos_58085015-stock-photo-woman-sitting-in-shared-apartment.jpg" width="100%"></div>
+      </div> <!--Fin de marco inferior-->
+      
+      <!--Inicio de contactanos-->
+      <footer class="page-footer" id="footer">
+          <div class="row">
+            <div class="col s12 m4 l3" id="informacion-footer">
+              <p> Pagina diseñada por:</p>
+              <p> Andres ramirez</p>
+              <p> Dayana Grueso Lopez</p>
+              <p> Juan pablo</p>
+              <p> Ucc Ing. Sistema 2017</p>
+            </div>
+            <div class="col s12 m4 l5"  id="footer-contactenos">
+              <div class="input-field">   
+                <input id="nombreContacto" type="text" required />
+                <label for="nombreContacto">Nombres:</label>                    
+              </div>
+              <div class="input-field">  
+                <input id="emailContacto" type="email" required />   
+                <label for="emailContacto" id="label-email">E-mail</label>                            
+              </div>              
+              <div class="tipos-comentarios">
+                <input id="comentarioTipo" type="checkbox" name="Comentarios" value="comentarios" checked />
+                  <label for="comentarioTipo" id="label-comentarios">     Comentarios  </label>
+                <input id="reclamoTipo" type="checkbox" name="reclamos" value="Reclamos"/> 
+                  <label for="reclamoTipo" id="label-reclamos">  Reclamos  </label>
+                <input id="mejoraTipo" type="checkbox" name="Mejora" value="mejora"/>          
+                  <label for="mejoraTipo" id="label-mejora">  Mejora </label>
+                <input id="otroTipo" type="checkbox" name="Otro" value="otro" />
+                  <label for="otroTipo" id="label-otro"> Otro</label>
+              </div>
+            </div>
+            <div class="col s12 m4 l4">
+              <textarea id="comentariosContacto" placeholder="Escribe tu comentario" cols="30" rows="8" required></textarea>
+              <input type="submit" class="waves-effect waves-light btn btnPpal" value="Enviar"  />         
+            </div>  
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2014 Copyright Text</div>
+          </div>
+      </footer> <!--Fin de contactanos-->
+
+         <!-- INICIO DE MODAL  DE REGISTRO-->
+          <div id="modal1" class="modal modal-registro">
+            <div class="modal-content">
+              <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 registro-bienvenida">
+                        <h4>Bienvenido al Blog de libros</h4>
+                        <div class="registro-bienvenida-texto">
+                            Publica, aprende y conectate a otros mundos sin salir de tu casa                        
+                        </div>
+                        <span>Empieza ya!!</span>
+                    </div>                  
+                    <div class="col s12 m6 registro-formulario">
+                      <div class="input-field">                            
+                            <input id="nombreContactoReg" type="text" required />
+                            <label for="nombreContactoReg">Nombres:</label>  
+                        </div>
+                      
+                        <div class="input-field">                        
+                            <input id="emailContactoReg" type="email" required />
+                             <label for="emailContactoReg">E-mail:</label>  
+                        </div>    
+                        <div class="input-field">                
+                            <input id="passwordReg" type="password" required />
+                            <label for="passwordReg">Password:</label>
+                        </div>
+                           
+                        <a id="btnRegistroEmail" class="btn waves-effect waves-light pulse">Registrate!!</a>  
+                                                                         
+                    </div>
+                    <div class="col s12 m12 registro-iconos-redes">
+                        <a id="authFB" class="logo-facebook" href="#">facebook</a>
+                        <a id="authTwitter" class="logo-twitter" href="#"></a>
+                    </div>
+                </div>                  
+              </div>
+            </div>        
+          </div>
+    <!-- FIN DE MODAL DE REGISTRO-->
 
 
 
+  <!-- INICIO DE MODAL INGRESAR EMAIL Y CLAVE--> 
+          <div id="modal2" class="modal modal-registro">
+            <div class="modal-content">
+              <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 registro-bienvenida">
+                        <h4>Bienvenido al Blog de libros</h4>
+                        <div class="registro-bienvenida-texto">
+                            Publica, aprende y conectate a otros mundos sin salir de tu casa                        
+                        </div>
+                        <span>Empieza ya!!</span>
+                    </div> 
+                    <form id="form-autenticacion">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" value="" id="email">
+                    </div>
 
-  		</header><!-- /header -->      
-
+                    <div class="form-group">
+                        <label for="password1">contraseña</label>
+                        <input type="password" class="form-control" name="password1" value="" id="password1">
+                    </div>
+                    <input type="submit" name="" value="Entrar">
+                        
+                    </form> 
+                </div>                  
+              </div>
+            </div>        
+          </div>
+     <!--FIN DE MODAL INGRESAR EMAIL Y CLAVE-->
+      
     </body>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="C:/Users/dayana/Documents/GitHub/Roommate/materialize/js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/general.js"></script>
+       
+
   </html>
+
