@@ -1,0 +1,278 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Roommate</title>
+	 <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="C:\Users\AndresStevenRamirezR\Desktop\seminario\Roommate/app/materialize/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\AndresStevenRamirezR\Desktop\seminario\Roommate/app/css/resultado.css">
+	<link rel="stylesheet" href="master.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+  
+
+	<header>
+
+<ul id="slide-out" class="side-nav">
+    <div class="userView">
+      <div class="background">
+        <img src="http://k17.kn3.net/ED965B1DF.png">
+      </div>
+      <img class="circle" src="http://static.notinerd.com/wp-content/uploads/2014/04/715.jpg">
+      <span class="white-text name">John Doe</span>
+      <span class="white-text email">jdandturk@gmail.com</span>
+    </div></li>
+    <li><a href="#!"> <i class="material-icons">home</i>Home</a></li>
+    <li><a href="#!"><i class="material-icons">perm_identity</i>Mi perfil</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"><i class="material-icons">add_alert</i>Mensajes</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Cambiar la foto de perfil</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">settings_power</i>Salir</a></li>
+  </ul>
+   <nav>
+    <div class="nav-wrapper" id="menu">
+      <a href="#" class="brand-logo right">Roommate</a>
+    </div>
+  </nav>
+  <br>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i> Mi perfil</a>
+  <br> <br> 
+ </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="todo">	
+	<div id="izquierda">
+		<h1>RESULTADOS</h1>
+
+				<div id="comments" ></div>
+
+			<br>
+			<br>
+			<br>
+
+				
+			<br>
+			<br>
+
+
+
+		</div>
+
+<div id="derecha" style="height:400px;">
+<section id="resultados">	
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<a class="boton_personalizado" href="Buscar.html">REGRESAR</a>
+</section>
+
+
+</div>
+
+
+
+
+
+
+		</div>
+
+	<br>
+<br>
+<br>
+<br>
+	
+<script type="text/javascript">
+	
+
+
+var messageRef = new Firebase('https://resultados-60778.firebaseio.com/');
+
+
+
+
+
+
+
+messageRef.on('child_added',function(snapshot){
+
+var message= snapshot.val();
+console.log(message.campo1);
+
+$('#comments').append("<strong>CLASE:</strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>ZONA:</strong>"+"<br>"+message.campo1+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+message.campo2+"<br>"+"<strong>AREA:</strong>"+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+"<strong>PRECIO:</strong>"+"<br>"+message.campo3+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+message.campo4+"<br>"+"<br>"+"<img src="+message.campo5+">"+"<br>"+"<br>"+"<br>"+"<br>");
+
+});
+</script>
+
+		
+	<footer>
+		<div class="row">
+            <div class="col s12 m4 l3" id="informacion-footer">
+              <p> Pagina diseñada por:</p>
+              <p> Andres ramirez</p>
+              <p> Dayana Grueso Lopez</p>
+              <p> Juan pablo</p>
+              <p> Ucc Ing. Sistema 2017</p>
+            </div>
+            <div class="col s12 m4 l5"  id="footer-contactenos">
+              <div class="input-field">   
+                <input id="nombreContacto" type="text" required />
+                <label for="nombreContacto">Nombres:</label>                    
+              </div>
+              <div class="input-field">  
+                <input id="emailContacto" type="email" required />   
+                <label for="emailContacto" id="label-email">E-mail</label>                            
+              </div>              
+              <div class="tipos-comentarios">
+                <input id="comentarioTipo" type="checkbox" name="Comentarios" value="comentarios" checked />
+                  <label for="comentarioTipo" id="label-comentarios">     Comentarios  </label>
+                <input id="reclamoTipo" type="checkbox" name="reclamos" value="Reclamos"/> 
+                  <label for="reclamoTipo" id="label-reclamos">  Reclamos  </label>
+                <input id="mejoraTipo" type="checkbox" name="Mejora" value="mejora"/>          
+                  <label for="mejoraTipo" id="label-mejora">  Mejora </label>
+                <input id="otroTipo" type="checkbox" name="Otro" value="otro" />
+                  <label for="otroTipo" id="label-otro"> Otro</label>
+              </div>
+            </div>
+            <div class="col s12 m4 l4">
+              <textarea id="comentariosContacto" placeholder="Escribe tu comentario" cols="30" rows="8" required></textarea>
+              <input type="submit" class="waves-effect waves-light btn btnPpal" value="Enviar"  />         
+            </div>  
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2014 Copyright Text</div>
+          </div>
+	</footer>
+	
+</body>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script type="text/javascript" src="C:\Users\AndresStevenRamirezR\Desktop\seminario\Roommate/app/materialize/js/materialize.min.js"></script>
+</html>

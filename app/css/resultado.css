@@ -1,0 +1,76 @@
+header, main, footer {
+      padding-left: 300px;
+    }
+
+#menu
+{
+	background: #000000;
+}
+
+#informacion-row
+{
+	margin-left: 150px;
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+	display:-webki-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	flex-direction:row;
+	flex-wrap: no-wrap;
+	
+}
+
+
+
+ .page-footer
+{
+	color: #fff;
+	font-size: 17px;
+	height: 100%;
+  	background:#000000;
+  	margin: 0px;
+  	text-align: center;
+}
+#label-nombre
+{
+	color: #fff;
+}
+
+#label-email
+{
+	color: #fff;
+}
+
+#label-comentarios
+{
+	color: #fff;
+}
+
+#label-reclamos
+{
+	color: #fff;	
+}
+
+#label-mejora
+{
+	color: #fff;	
+}
+
+#label-otros
+{
+	color: #fff;
+}
+#comentariosContacto
+{
+	margin-bottom: 10px;
+  	height: 140px;
+  	padding-top: 10px;
+}
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+      

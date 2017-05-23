@@ -1,0 +1,161 @@
+*{
+box-sizing: border-box;
+
+}
+
+body{
+	margin: 0px;
+	font-family: sans-serif;
+	background: #868686;
+}
+
+h2{
+	color: #fff;
+	text-align: center;
+}
+
+.header-logo{
+	margin-right:5em;
+		margin-left:50px;
+		margin-top :20px;	
+}
+
+.slogan{
+/*	text-align: right;*/
+    float:right;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+img	{
+
+			border-width: 2px;
+			border-radius: 6%;
+			height: 140px;
+			padding: 0px;
+			width: 250px;
+			}
+.formulario-registro{
+	width: 98%;
+	max-width: 900px;
+	margin: auto;
+	background: #868686;
+	border-radius: 50px;
+}
+
+.titulo-form{
+        color: #000000;
+		font-size:40px;
+		font-family:'Montserrat', sans-serif;
+		margin-top:30px
+		margin-bottom:0;
+
+}
+
+.formulario{
+	padding: 5px 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input{
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+select{
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+.campo1{
+	width: 48%;
+}
+.campo2{
+	width: 48%;
+}
+.campo3{
+	width: 48%;
+}
+.campo4{
+	width: 48%;
+}
+.campo5{
+	width: 48%;
+}
+.campo6{
+	width: 48%;
+}
+.campo7{
+	width: 48%;
+}
+.campo8{
+	width: 48%;
+} 
+.campo9{
+	width: 48%;
+}
+.campo10{
+	width: 48%;
+}
+.campo11{
+    margin-top: 2px;
+	width: 96%;
+	padding:left: 5px;
+	padding-right: 5px;
+    height: 80px;
+}
+
+/*input[type="text"],input[type="email"],input[type="password"], input[type="date"]{
+	margin-top: 2px;
+	width: 100%;
+	padding:left: 5px;
+	padding-right: 5px;
+	height: 35px;
+}*/
+
+input[type="submit"]{
+	width: 120px;
+	height: 40px;
+	margin: auto;
+	color: #000000;
+	background: #144c83;
+	background: linear-gradient(#000000, #FFFFFF);
+	float: right;
+	border: 0;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+input[type="submit"]:hover{
+    background: linear-gradient(#FFFFFF, #ffffff);
+    color:#000000;
+	}
+
+footer{
+	    width: 100%;
+		text-align: center;
+	
+}
+	.form-link{
+		width: 100%;
+		margin: 7px;
+		text-align: center;
+		font-size: 14px;
+	}
+	/*Queries*/
+
+	
+@media screen and (min-width: 768px){
+		#formulario{
+			width: 0%
+			margin: 0 auto;
+		}
+
+
+}
